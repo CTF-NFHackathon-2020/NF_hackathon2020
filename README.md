@@ -10,3 +10,4 @@ Your solutions can range from new ways to analyze data and identify new drugs an
 
 The data for all participants to use for the hackathon is now available! You may access the data through the Synapse website here, and please visit the "Resources" section of the platform for more information.
 
+Current ontology mapping via Protege Online: https://webprotege.stanford.edu/#projects/d80b2782-b714-45f9-9cbd-598df356ce5e/edit/Classes
