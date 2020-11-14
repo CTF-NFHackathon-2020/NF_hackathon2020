@@ -1,0 +1,51 @@
+Thank you for your attention
+My name is Krishna, and this presentation is on a Collaborative Ontology for Neurofibromatosis
+
+Eventually this project has led to the making of an R package instead of just a single ontology, as there just isn't a consensus on an Ontology of Ontologies between the major Ontology publishers. I'll get into that later.
+
+<slide>
+
+Originally, I wanted to create a new ontology to step into the topic. using a review paper on the topic to build the ontology seemed perfect. However, once I started looking at the existing ontology data, to start building the connections, the rabbit hole was below.
+
+<slide>
+
+Briefly, Ontologies define the basest of terminology which exists for a topic.
+And unfortunately, Neurofibromatosis, like other rare diseases, has a multitude of varied terminologies, which are factored by the Ontology publishers adding information annotations and properties using varied formats, making duplication a major issue.
+
+Every term like 'neurofibroma' (with or without a capital N), or it's synonym 'neurofibromatis' (with or without its capital N) are being identified by their own unique identifier IRI, or Internationalized Resource Identifier, while the term is known as a prefered label. Branching onto that are snippets of terms and classes and properties which aggregate with minor word revisions to make them unique to searching for duplicates.  
+
+<slide>
+
+Focusing on a top-down approach, I gathered over 20 ontologies where the term was present via BioOntologies Search app, and unfortunately, I ran out of memory just loading them into Protege, which is one of the most popular open-sourced ontology editors available. Altogether, there were over 5.65 million axioms within the combined ontologies, and most were duplicates with minor revisions. 
+
+<slide>
+
+There were around 80 terms matching within the 20 ontologies gathered, with various fragments of information, and none with all of it. 
+
+<slide>
+
+BioPortal is the app for BioOntolgies repository where they host 900 ontologies, although only about 300 are accessed within a few months. Using there search engine is easy, but to get a term information, you would have to either download the ontology, then manually search and extract information, and this would be done per ontology. 
+
+<slide>
+
+Else, a researcher can go a step deeper and get the term data in ontologies raw format, XML, with the latest syntax, OWL (Web Ontology Language) and the more general, RDF (Resource Description Format). 
+
+<slide>
+
+There are additional syntaxes available, which are declared via namespaces in XML, and their use adds to a significant portion of duplications and readability issues when discussing the Ontology of Ontologies. 
+
+<slide>
+
+Making it past that, gives an aggregated sum of information, even when direct duplicates were removed. Unfortunately, that is a manual task as the information, based on a term, belongs to the expertise of a domain expert or individual researcher. However, this information can atleast be easily retrieved via a single function. 
+I urge you to see the associated R markdown file which outputs the csv files of these terms for the term 'neurofibroma'. There's a lot of room for improvement, but it will take time. 
+
+<slide>
+
+Some additional potentials include exporting in Protege readable RDF format, which will allow researchers to visualize and share the term graphs relatively more easily.
+Another is to rank terms by various factors to add some simplications before domain experts are required to curate.
+R can also be used to directly output the associations directly, instead of relying on Protege.
+These functions can also be extended to expand the trees with parents / children fitting of this combined term.
+Lastly, the overwhelming opportunity of applying Natural Language Processing to simplify the aggregated axioms, just as much as you can use NLP to process written articles to build upon term usage. 
+
+Thank you for your attention! 
+
