@@ -1,8 +1,9 @@
-# NF_hackathon2020
+# NF_hackathon2020 
 
-*adapted from [NCBI-Hackathons/GoodDoc](https://github.com/NCBI-Hackathons/GoodDoc) with some tweaks for analysis-driven projects*
+## COLLABORATIVE ONTOLOGY FOR NEUROFIBROMATOSIS
 
-*most fields are optional, Conclusion and Important Resources are required*
+### https://nfhack-platform.bemyapp.com/#/projects/5f884652419639001b6d0174
+
 
 This project created a R-package essential to start compiling & assembling the varied data published through ontologies.
 
