@@ -18,6 +18,8 @@ https://github.com/KrishnaTO/OntologyTermAggregator
 
 The demo is available here: https://github.com/KrishnaTO/NF_hackathon2020/blob/main/Demo/SearchviaCombinedOntology.Rmd
 
+*The reason Docker was not used was that this package & demo requires a user-specific API key. Although there probably is a method to adding the API key within the docker file, it still would not impact the reproducibility, as all of the data is hosted*
+
 The input used, Searchtoclasses_json.RData, is just a pre-downloaded convinience data object to be called for efficiency purposes from within the script. It will not be useful for any other term substitution other than the default within the demo.
 
 The outputs are combined_output.csv, which hold the unique IDs, Descriptions, IRI links and other variables from the script, and the latter combined_output.complex.RData which holds the properties and metalinks for the term sources. At this time, the data can be followed by their variable names within the R global environment, and further development will follow due to time constraints.
